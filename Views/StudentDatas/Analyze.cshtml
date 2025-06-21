@@ -1,0 +1,29 @@
+﻿@model AcademicPerformanceSystem.Models.StudentData
+
+@{
+    ViewData["Title"] = "Analyze";
+}
+
+<h1>Analyze</h1>
+
+<div>
+    <h4>Student Data</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Student Name</dt>
+        <dd class="col-sm-10">@Model.StudentName</dd>
+        <dt class="col-sm-2">Exam Score</dt>
+        <dd class="col-sm-10">@Model.ExamScore</dd>
+        <dt class="col-sm-2">Attendance Rate</dt>
+        <dd class="col-sm-10">@Model.AttendanceRate</dd>
+        <dt class="col-sm-2">Practical Score</dt>
+        <dd class="col-sm-10">@Model.PracticalScore</dd>
+        <dt class="col-sm-2">Project Score</dt>
+        <dd class="col-sm-10">@Model.ProjectScore</dd>
+    </dl>
+</div>
+
+<div>
+    <h4>Analysis Result</h4>
+    <p>@ViewBag.AnalysisResult</p>
+</div>
